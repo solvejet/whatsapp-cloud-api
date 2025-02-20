@@ -18,8 +18,8 @@
     "allowUnreachableCode": false,
 
     // Modules
-    "module": "CommonJS",
-    "moduleResolution": "node",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
