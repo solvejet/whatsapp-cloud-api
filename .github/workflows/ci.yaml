@@ -28,7 +28,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      # Setup npm cache
       - name: Cache npm dependencies
         uses: actions/cache@v3
         with:
@@ -37,7 +36,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-npm-
 
-      # Regular install to generate package-lock.json if it doesn't exist
       - name: Install dependencies
         run: npm install
 
